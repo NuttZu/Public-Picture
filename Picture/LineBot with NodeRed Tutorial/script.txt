@@ -1,0 +1,27 @@
+var receive_msg = msg.payload;
+let reply;
+if (receive_msg.events[0].message.type == "text") {
+    if (receive_msg.events[0].message.text == "test") {
+        reply = { 
+            type: 'text', 
+            text: "$ ยังอยู่จ้าา",
+            "emojis" : [
+                {
+                    "index" : "0",
+                    "productId": "5ac21a18040ab15980c9b43e",
+                    "emojiId" : "014"
+                }
+            ]
+        }
+    }
+    else {
+        reply = {
+            type: 'text',
+            text: 'ไม่มีคำสั่งนี้ในระบบครับ'
+        }
+    }
+}
+
+let value = [receive_msg, reply];
+msg.payload = value;
+return msg;
