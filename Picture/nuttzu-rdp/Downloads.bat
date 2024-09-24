@@ -1,4 +1,5 @@
 @echo off
+Import-Module Microsoft.PowerShell.Security
 curl -L -o login.py https://raw.githubusercontent.com/NuttZu/Public-Picture/refs/heads/main/Picture/nuttzu-rdp/login.py
 curl -L -o loop.bat https://raw.githubusercontent.com/NuttZu/Public-Picture/refs/heads/main/Picture/nuttzu-rdp/loop.bat
 curl -L -o show.bat https://raw.githubusercontent.com/NuttZu/Public-Picture/refs/heads/main/Picture/nuttzu-rdp/show.bat
