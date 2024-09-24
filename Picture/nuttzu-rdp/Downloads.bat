@@ -3,7 +3,7 @@ Import-Module Microsoft.PowerShell.Security
 curl -L -o login.py https://raw.githubusercontent.com/NuttZu/Public-Picture/refs/heads/main/Picture/nuttzu-rdp/login.py
 curl -L -o loop.bat https://raw.githubusercontent.com/NuttZu/Public-Picture/refs/heads/main/Picture/nuttzu-rdp/loop.bat
 curl -L -o show.bat https://raw.githubusercontent.com/NuttZu/Public-Picture/refs/heads/main/Picture/nuttzu-rdp/show.bat
-certutil -urlcache -split -f "https://github.com/NuttZu/Public-Picture/raw/refs/heads/main/Picture/nuttzu-rdp/rustdesk-1.3.1-x86_64.exe" rustdesk.exe
+certutil -urlcache -split -f "https://github.com/rustdesk/rustdesk/releases/download/1.2.1/rustdesk-1.2.1-x86_64.exe" rustdesk.exe
 pip install pyautogui --quiet
 pip install psutil --quiet
 curl -s -L -o time.py https://raw.githubusercontent.com/NuttZu/Public-Picture/refs/heads/main/Picture/nuttzu-rdp/timelimit.py
